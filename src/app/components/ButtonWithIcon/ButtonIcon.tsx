@@ -1,5 +1,5 @@
 "use client";
-import React, { forwardRef } from "react";
+import React, { forwardRef, ForwardRefRenderFunction } from "react";
 
 interface ButtonWithIconProps {
   onClick?: () => void;
@@ -9,10 +9,10 @@ interface ButtonWithIconProps {
   active?: boolean;
 }
 
-const ButtonWithIcon: React.FC<ButtonWithIconProps> = (
-  { onClick, variant = "primary", icon, children, active = false },
-  ref
-) => {
+const ButtonWithIcon: ForwardRefRenderFunction<
+  HTMLButtonElement,
+  ButtonWithIconProps
+> = ({ onClick, variant = "primary", icon, children, active = false }, ref) => {
   return (
     <button
       onClick={onClick}
