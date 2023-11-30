@@ -1,7 +1,7 @@
 "use client";
 import React, { ButtonHTMLAttributes } from "react";
 import Button from "../Button/Button";
-import LineChart from "../LineChart";
+// import LineChart from "../LineChart";
 
 interface LandingProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary";
