@@ -29,10 +29,7 @@ const Header: React.FC = () => {
   const [popoverPosition, setPopoverPosition] = useState({ top: 0, left: 0 });
   const appsButtonRef = useRef<HTMLButtonElement | null>(null);
 
-  const handleButtonClick = (
-    buttonId: number,
-    event: React.MouseEvent<HTMLButtonElement>
-  ) => {
+  const handleButtonClick = (buttonId: number) => {
     console.log(`Button ${buttonId} clicked!`);
     setActiveButton(buttonId);
 
@@ -84,8 +81,7 @@ const Header: React.FC = () => {
         {buttons.map((button) => (
           <ButtonWithIcon
             key={button.id}
-            onClick={(e) => handleButtonClick(button.id, e)}
-            variant={button.variant}
+            onClick={() => handleButtonClick(button.id)}
             icon={button.icon}
             active={activeButton === button.id}
             ref={button.id === 5 ? appsButtonRef : undefined}

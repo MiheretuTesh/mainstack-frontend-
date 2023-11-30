@@ -3,7 +3,7 @@ import React, { forwardRef, ForwardRefRenderFunction } from "react";
 
 interface ButtonWithIconProps {
   onClick?: () => void;
-  variant?: "primary" | "secondary";
+  variant?: "primary";
   icon: React.ReactNode;
   children?: React.ReactNode;
   active?: boolean;
