@@ -42,7 +42,7 @@ const Landing: React.FC<LandingProps> = ({
             <Button>Withdraw</Button>
           </div>
         </div>
-        <div className="py-4" style={{ width: "100%" }}>
+        <div className="py-4" style={{ width: "100%", zIndex: "-100" }}>
           <ResponsiveContainer width="100%" height={300}>
             <AreaChart
               width={500}

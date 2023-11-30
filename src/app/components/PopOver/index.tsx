@@ -40,7 +40,7 @@ const AppsPopover: React.FC<AppsPopoverProps> = ({ top, left }) => {
   return (
     <div
       className={`absolute right-10 mt-2 w-80 bg-white border rounded shadow-lg p-3 text-black`}
-      style={{ top: `${top - 30}px`, left: `${left - 50}px` }}
+      style={{ top: `${top - 30}px`, left: `${left - 50}px`, zIndex: 1 }}
     >
       {appItems.map((item, index) => (
         <AppItem key={index} {...item} />
