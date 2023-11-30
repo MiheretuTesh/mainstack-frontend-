@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./components/Navbar/Navbar";
 import Landing from "./components/Landing";
 
