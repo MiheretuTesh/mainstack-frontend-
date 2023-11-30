@@ -9,7 +9,7 @@ interface AppItemProps {
 
 const AppItem: React.FC<AppItemProps> = ({ imgSrc, title, description }) => {
   return (
-    <div className="w-full p-2 group hover:border rounded-lg hover:border-grey-500">
+    <div className="w-full p-2 group hover:border rounded-lg hover:border-blue-500">
       <div className="flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <img src={imgSrc} alt="Logo" />
